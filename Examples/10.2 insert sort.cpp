@@ -22,10 +22,10 @@ void insert_sort(int *array, int N){
 	for (int i = 1; i<N; i++)
 	{
 		int k = i;
-		while (k > 0 and array[k - 1] > array[k])
+		while(k > 0 and array[k-1] > array[k])
 		{
-			swap(array[k - 1], array[k]);
-			k -= 1;
+			swap(array[k-1], array[k]);
+			k-=1;
 		}
 	}
 }
@@ -35,12 +35,12 @@ int main()
 {
 	srand(time(0));
 
-	const int size = 10;
+	const int size = 10000;
 	int A[size];
 
 	/*
 	for (int& x : A)		//запись цикла в диапазоне
-	int x = randInt(0, 100);
+		int x = randInt(0, 100);
 	*/
 
 	for (int i = 0; i < size; i++)
