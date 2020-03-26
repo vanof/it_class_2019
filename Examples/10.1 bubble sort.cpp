@@ -17,15 +17,19 @@ void printArray(int* arr, int N)
 	cout << endl;
 }
 
-
-void insert_sort(int *array, int N){
-	for (int i = 1; i<N; i++)
+void bubble(int* arr, int N) 
+{
+	for (int i = 0; i < N - 1; i++)
 	{
-		int k = i;
-		while (k > 0 and array[k - 1] > array[k])
+		for (int j = N - 2; j >= i; j--)
 		{
-			swap(array[k - 1], array[k]);
-			k -= 1;
+			if (arr[j + 1] < arr[j]) 
+			{
+				//swap(arr[j], arr[j+1]);	
+				int temp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = temp;
+			}
 		}
 	}
 }

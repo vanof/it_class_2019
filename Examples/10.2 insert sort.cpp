@@ -17,19 +17,17 @@ void printArray(int* arr, int N)
 	cout << endl;
 }
 
-
-void insert_sort(int *array, int N){
+void insert_sort(int *arr, int N){
 	for (int i = 1; i<N; i++)
 	{
 		int k = i;
-		while(k > 0 and array[k-1] > array[k])
+		while(k > 0 and arr[k-1] > arr[k])
 		{
-			swap(array[k-1], array[k]);
+			swap(arr[k-1], arr[k]);
 			k-=1;
 		}
 	}
 }
-
 
 int main()
 {
@@ -37,11 +35,6 @@ int main()
 
 	const int size = 10000;
 	int A[size];
-
-	/*
-	for (int& x : A)		//запись цикла в диапазоне
-		int x = randInt(0, 100);
-	*/
 
 	for (int i = 0; i < size; i++)
 		A[i] = randInt(0, 100);

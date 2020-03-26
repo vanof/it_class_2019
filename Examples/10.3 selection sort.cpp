@@ -17,7 +17,6 @@ void printArray(int* arr, int N)
 	cout << endl;
 }
 
-
 void selection_sort(int *array, int N){
 	for (int i = 0; i<N; i++){
 		int min = i;
@@ -31,18 +30,12 @@ void selection_sort(int *array, int N){
 	}
 }
 
-
 int main()
 {
 	srand(time(0));
 
 	const int size = 10000;
 	int A[size];
-
-	/*
-	for (int& x : A)		//запись цикла в диапазоне
-		int x = randInt(0, 100);
-	*/
 
 	for (int i = 0; i < size; i++)
 		A[i] = randInt(0, 100);
