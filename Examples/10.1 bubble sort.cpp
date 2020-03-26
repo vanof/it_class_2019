@@ -34,7 +34,6 @@ void bubble(int* arr, int N)
 	}
 }
 
-
 int main()
 {
 	srand(time(0));

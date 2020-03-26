@@ -17,16 +17,16 @@ void printArray(int* arr, int N)
 	cout << endl;
 }
 
-void selection_sort(int *array, int N){
+void selection_sort(int *arr, int N){
 	for (int i = 0; i<N; i++){
 		int min = i;
 		for (int j = i + 1; j<N; j++){
-			if (array[j]<array[min])
+			if (arr[j]<arr[min])
 				min = j;
 			i++;
 		}
 		if (min != i)
-			swap(array[min], array[i]);
+			swap(arr[min], arr[i]);
 	}
 }
 
