@@ -21,7 +21,7 @@ void insert_sort(int *arr, int N){
 	for (int i = 1; i<N; i++)
 	{
 		int k = i;
-		while(k > 0 and arr[k-1] > arr[k])
+		while(k > 0 && arr[k-1] > arr[k])
 		{
 			swap(arr[k-1], arr[k]);
 			k-=1;
