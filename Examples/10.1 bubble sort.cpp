@@ -17,7 +17,7 @@ void printArray(int* arr, int N)
 	cout << endl;
 }
 
-void bubble(int* arr, int N) 
+void bubble_sort(int* arr, int N) 
 {
 	for (int i = 0; i < N - 1; i++)
 	{

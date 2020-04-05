@@ -17,23 +17,16 @@ void printArray(int* arr, int N)
 	cout << endl;
 }
 
-void insert_sort(int *arr, int N){
-	for (int i = 1; i<N; i++)
-	{
-		int k = i;
-		while(k > 0 && arr[k-1] > arr[k])
-		{
-			swap(arr[k-1], arr[k]);
-			k-=1;
-		}
-	}
+int comp(const int *i, const int *j)
+{
+	return *i - *j;
 }
 
 int main()
 {
 	srand(time(0));
 
-	const int size = 10000;
+	const int size = 250000;
 	int A[size];
 
 	for (int i = 0; i < size; i++)
@@ -43,8 +36,10 @@ int main()
 		printArray(A, size);
 
 	clock_t tStart = clock();
-
-	insert_sort(A, size);
+	
+	//вызов стандартной функции быстрой сортировки qsort
+	//(имя массива, его размер, размер ячейки, функция сравнения comp, приведенная к типу void
+	qsort(A, size, sizeof *A, (int(*) (const void *, const void *)) comp);
 
 	cout << "Time: " << (double)(clock() - tStart) / CLOCKS_PER_SEC << endl;
 
