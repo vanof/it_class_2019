@@ -10,23 +10,23 @@ using namespace std;
 /*
 Создать структуру данных, содержащую информацию
 о учениках группы со следующими полями: 
-класс, фамилия, пол, оценки (10 шт.)
+класс, имя, фамилия, пол, оценки (10 шт.)
 Написать и протестировать функции:
 - ввода данных;
 - вывода данных;
-- расчета среднего оценки для каждого ученика;
+- расчета средней оценки для каждого ученика;
 - определения отличников из числа учеников (оценок "5" > 80%).
 */
 
 struct student{
 	string t_class;
-	string second_name;   //char[20]
+	string second_name;   
 	bool gender;
 	int grade[5];
 };
 
 //функция вывода в консоль
-void print(student* p)		//int*  string* - адресный тип данных
+void print(student* p)		//int* или string* - это адресный тип данных
 {
 	cout << p->t_class  << endl;
 	cout << p->second_name << endl;
@@ -47,6 +47,7 @@ void input(student* p)
 	cout << "Enter second name:" << endl;
 	cin >> p->second_name;
 	cout << "Enter gender (1 - woman or 0 - man):" << endl;
+	//добавить проверку ввода, отличного от 0 или 1
 	cin >> p->gender;
 	int n = sizeof(p->grade)/sizeof(int);
 	cout << "Enter " << n << " grade:" << endl;
