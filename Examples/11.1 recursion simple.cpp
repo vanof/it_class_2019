@@ -16,8 +16,6 @@ void func(int num)
 	cout << num << " ";
 }
 
-
-
 int _tmain(int argc, _TCHAR* argv[])
 {
 	//func(3) - func(2) - func(1) - func(0)

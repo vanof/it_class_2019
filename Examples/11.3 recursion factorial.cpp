@@ -4,7 +4,7 @@
 using namespace std;
 
 int i = 1; // инициализация глобальной переменной для подсчёта кол-ва рекурсивных вызовов
-unsigned long long int result;
+unsigned long long int result;		//тип long long int для хранения больших целых чисел
 
 /*
 0!=1
