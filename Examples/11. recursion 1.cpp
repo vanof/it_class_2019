@@ -1,3 +1,5 @@
+//пример рекурсивного вызова из диагностической работы
+
 #include "stdafx.h"
 #include <iostream>
 
@@ -26,7 +28,7 @@ void G(int n)
 	cout << n;
 }
 
-int _tmain(int argc, _TCHAR* argv[])
+int main(int argc, _TCHAR* argv[])
 {
 	F(4);
 	
