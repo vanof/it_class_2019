@@ -30,7 +30,7 @@ int main()
      cin>>ptrarray[b][c];
      }
      
-     for(i = 0; i < 10; i++)
+     for(int i = 0; i < 10; i++)
   {
     cin >> m[i]; // Вводим оценки
     d+=m[i]; // Суммирование оценок
