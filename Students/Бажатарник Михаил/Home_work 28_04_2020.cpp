@@ -76,6 +76,7 @@ void output(int e)
 
 int main()
 {
+    setlocale (LC_ALL, "rus");
     for(int i = 1; i <= 10; i++)
     {input(i);}
     for(int i = 1; i <= 10; i++)
