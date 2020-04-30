@@ -1,10 +1,11 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 struct student
 {
-	int t_class[10];
-	int second_name[10];   
+	string t_class[10];
+	string second_name[10];   
 	int gender[10];
 	int grade[100];
 };
