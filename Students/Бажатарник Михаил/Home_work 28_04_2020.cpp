@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 struct student
@@ -14,8 +13,7 @@ student use;
 
 void input(int t)
 {
-  string a;
-  int b,c,m;
+  int b,c;
   
   cout << "Класс:" << endl;
   cin >> use.t_class[t]; //Ввод в класс
@@ -39,17 +37,16 @@ void input(int t)
 
 void output(int e)
 {
-   string d;
    int f,g,n,z;
   
   cout << "Класс:" <<"  "; //Вывод в класс
-  cout << use.t_class[t] <<"  ";
+  cout << use.t_class[e] <<"  ";
   
   cout << "Имя и фамилия:" <<"  "; //Вывод в имя и фамилию
-  cout << use.second_name[t] <<"  ";
+  cout << use.second_name[e] <<"  ";
   
   cout << "Пол:" <<"  "; //Вывод в пол
-  cout << use.gender[t] <<"  ";
+  cout << use.gender[e] <<"  ";
   
   cout << "Средняя оценка:" <<"  ";
   if(e == 1){f = 0;}
