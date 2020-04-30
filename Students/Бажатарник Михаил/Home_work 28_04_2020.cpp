@@ -18,16 +18,13 @@ void input(int t)
   int b,c,m;
   
   cout << "Класс:" << endl;
-  cin >> a;   
-  use.t_class[t] = a; //Ввод в класс
+  cin >> use.t_class[t]; //Ввод в класс
   
   cout << "Имя и фамилия:" << endl
-  cin >> a;   
-  use.second_name[t] = a; //Ввод в имя и фамилию
+  cin >> use.second_name[t]; //Ввод в имя и фамилию
   
   cout << "Пол:" << endl;
-  cin >> a;   
-  use.gender[t] = a; //Ввод в пол
+  cin >> use.gender[t]; //Ввод в пол
   
   cout << "Оценки:" << endl;
   if(t == 1) {b = 0;}
@@ -35,8 +32,7 @@ void input(int t)
   for(int i = 1; i <= 10; i++)
     {
     c = b+i;
-    cin >> m;   
-    use.grade[c] = m; //Ввод в оценки
+    cin >> use.grade[c]; //Ввод в оценки
     }
   cout << endl;
 }
@@ -46,17 +42,14 @@ void output(int e)
    string d;
    int f,g,n,z;
   
-  cout << "Класс:" <<"  ";
-  d = use.t_class[t]; //Вывод в класс
-  cout << d <<"  ";
+  cout << "Класс:" <<"  "; //Вывод в класс
+  cout << use.t_class[t] <<"  ";
   
-  cout << "Имя и фамилия:" <<"  ";
-  d = use.second_name[t]; //Вывод в имя и фамилию
-  cout << d <<"  ";
+  cout << "Имя и фамилия:" <<"  "; //Вывод в имя и фамилию
+  cout << use.second_name[t] <<"  ";
   
-  cout << "Пол:" <<"  ";
-  d = use.gender[t]; //Вывод в пол
-  cout << d <<"  ";
+  cout << "Пол:" <<"  "; //Вывод в пол
+  cout << use.gender[t] <<"  ";
   
   cout << "Средняя оценка:" <<"  ";
   if(e == 1){f = 0;}
