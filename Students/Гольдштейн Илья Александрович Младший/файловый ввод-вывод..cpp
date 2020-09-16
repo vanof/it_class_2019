@@ -6,8 +6,8 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL, "rus");
-    ifstream file_input("C:\\Users\\Sch1561-it-10\\Desktop\\input.txt");
-    ofstream file_output("C:\\Users\\Sch1561-it-10\\Desktop\\output.txt");
+    ifstream file_input("C:\Users\Sch1561-it-10\Documents\GitHub\it_class_2019\Tasks\24.txt");
+    ofstream file_output("C:\Users\Sch1561-it-10\Documents\GitHub\it_class_2019\Tasks\24.txt");
     string s;
     int k = 0;
     int m = 1;
